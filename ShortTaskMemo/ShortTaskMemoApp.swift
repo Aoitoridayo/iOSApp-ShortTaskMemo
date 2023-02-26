@@ -11,7 +11,7 @@ import SwiftUI
 struct ShortTaskMemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabItemView()
         }
     }
 }

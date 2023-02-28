@@ -13,6 +13,7 @@ class MonthTaskViewModel: ObservableObject {
 
     func delete(offset: IndexSet) {
         self.tasks.remove(atOffsets: offset)
+        save()
     }
     
     func didTapPlusButton() {
@@ -22,6 +23,7 @@ class MonthTaskViewModel: ObservableObject {
     func didTapAddViewSaveButton(text: String) {
         self.tasks.append(TaskModel(text: text, onFlag: false))
         isAddView = false
+        save()
     }
     
     func didTapAddViewCancelButton() {
@@ -33,5 +35,26 @@ class MonthTaskViewModel: ObservableObject {
             return
         }
         self.tasks[index] = task
+        sortTasks()
+    }
+    
+    func firstGet() {
+        let userDefaults = UserDefaultsManager()
+        let key = KeyManager()
+        let savedTasks = userDefaults.getDefaults(key: key.monthTasksKey)
+        self.tasks = savedTasks
+    }
+    
+    private func sortTasks() {
+        let onTasks = self.tasks.filter({ $0.onFlag })
+        let offTasks = self.tasks.filter({ !$0.onFlag })
+        self.tasks = onTasks + offTasks
+        save()
+    }
+    
+    private func save() {
+        let userDefaults = UserDefaultsManager()
+        let key = KeyManager()
+        userDefaults.setDefaults(tasks: tasks, key: key.monthTasksKey)
     }
 }

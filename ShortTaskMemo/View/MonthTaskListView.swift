@@ -32,6 +32,7 @@ struct MonthTaskListView: View {
                 }
             )
         }
+        .onAppear(perform: taskViewModel.firstGet)
     }
 }
 

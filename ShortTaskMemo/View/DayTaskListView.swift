@@ -32,6 +32,7 @@ struct DayTaskListView: View {
                 }
             )
         }
+        .onAppear(perform: taskViewModel.firstGet)
     }
 }
 

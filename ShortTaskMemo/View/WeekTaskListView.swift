@@ -32,6 +32,7 @@ struct WeekTaskListView: View {
                 }
             )
         }
+        .onAppear(perform: taskViewModel.firstGet)
     }
 }
 

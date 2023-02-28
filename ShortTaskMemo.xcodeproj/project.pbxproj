@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BE6406F29ADD2BE008A79C7 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6406E29ADD2BE008A79C7 /* UserDefaultsManager.swift */; };
 		8BE7D8BB29ABE85A0086DABA /* ShortTaskMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D8BA29ABE85A0086DABA /* ShortTaskMemoApp.swift */; };
 		8BE7D8BD29ABE85A0086DABA /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D8BC29ABE85A0086DABA /* TabItemView.swift */; };
 		8BE7D8BF29ABE85B0086DABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE7D8BE29ABE85B0086DABA /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BE6406E29ADD2BE008A79C7 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		8BE7D8B729ABE85A0086DABA /* ShortTaskMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortTaskMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE7D8BA29ABE85A0086DABA /* ShortTaskMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortTaskMemoApp.swift; sourceTree = "<group>"; };
 		8BE7D8BC29ABE85A0086DABA /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				8BE7D8C829ABE8960086DABA /* TaskModel.swift */,
+				8BE6406E29ADD2BE008A79C7 /* UserDefaultsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				8BE7D8C929ABE8960086DABA /* TaskModel.swift in Sources */,
 				8BE7D8DC29ABF82C0086DABA /* WeekTaskListView.swift in Sources */,
 				8BE7D8D429ABED160086DABA /* AddTaskView.swift in Sources */,
+				8BE6406F29ADD2BE008A79C7 /* UserDefaultsManager.swift in Sources */,
 				8BE7D8DA29ABF7710086DABA /* MonthTaskViewModel.swift in Sources */,
 				8BE7D8BD29ABE85A0086DABA /* TabItemView.swift in Sources */,
 				8BE7D8D629ABEF670086DABA /* ListItemView.swift in Sources */,

@@ -18,3 +18,7 @@
 ・日、週、月のタスクをそれぞれ管理することができる
 
 以上の3つの特徴を持つショートメモアプリケーションです。
+
+# DOWNLOAD
+
+<a href="https://apps.apple.com/app/shorttaskmemo-%E3%81%B2%E3%81%A8%E3%81%93%E3%81%A8%E3%83%A1%E3%83%A2%E3%82%A2%E3%83%97%E3%83%AA/id6446014397">App Storeへ</a>

@@ -1,17 +1,16 @@
 //
-//  AddTaskView.swift
+//  EditView.swift
 //  ShortTaskMemo
 //
-//  Created by 渡邊魁優 on 2023/02/27.
+//  Created by 渡邊魁優 on 2023/03/24.
 //
 
 import SwiftUI
 
-struct AddTaskView: View {
-    @State private var text = ""
-    let save: (String) -> Void
+struct EditView: View {
+    @State var task: TaskModel
+    let edit: (TaskModel) -> Void
     let cancel: () -> Void
-    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -26,15 +25,15 @@ struct AddTaskView: View {
                     .foregroundColor(Color.white)
                 
                 VStack {
-                    Text("タスクを入力してください")
-                    TextField("（例）書類を提出する", text: $text)
+                    Text("タスクを編集")
+                    TextField("（例）書類を提出する", text: $task.text)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .frame(width: 250)
                         .padding()
                         .keyboardType(.emailAddress)
                     
                     Button(action: {
-                        save(text)
+                        edit(task)
                     }) {
                         Text("保存")
                     }
@@ -45,7 +44,7 @@ struct AddTaskView: View {
                     Button(action: {
                         cancel()
                     }) {
-                        Text("戻る")
+                        Text("back")
                     }
                 }
             }
@@ -53,8 +52,9 @@ struct AddTaskView: View {
     }
 }
 
-struct AddTaskView_Previews: PreviewProvider {
+struct EditView_Previews: PreviewProvider {
+    static var task = TaskModel(text: "掃除", onFlag: true)
     static var previews: some View {
-        AddTaskView(save: { _ in }, cancel: {})
+        EditView(task: task ,edit: { _ in }, cancel: {})
     }
 }

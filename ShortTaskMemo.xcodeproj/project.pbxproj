@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BD567C529CD6CC400757258 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD567C429CD6CC400757258 /* EditView.swift */; };
 		8BE6406F29ADD2BE008A79C7 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6406E29ADD2BE008A79C7 /* UserDefaultsManager.swift */; };
 		8BE7D8BB29ABE85A0086DABA /* ShortTaskMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D8BA29ABE85A0086DABA /* ShortTaskMemoApp.swift */; };
 		8BE7D8BD29ABE85A0086DABA /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE7D8BC29ABE85A0086DABA /* TabItemView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BD567C429CD6CC400757258 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		8BE6406E29ADD2BE008A79C7 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		8BE7D8B729ABE85A0086DABA /* ShortTaskMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortTaskMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE7D8BA29ABE85A0086DABA /* ShortTaskMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortTaskMemoApp.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				8BE7D8D129ABEC420086DABA /* PlusButton.swift */,
 				8BE7D8D329ABED160086DABA /* AddTaskView.swift */,
 				8BE7D8D529ABEF670086DABA /* ListItemView.swift */,
+				8BD567C429CD6CC400757258 /* EditView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				8BE7D8DC29ABF82C0086DABA /* WeekTaskListView.swift in Sources */,
 				8BE7D8D429ABED160086DABA /* AddTaskView.swift in Sources */,
 				8BE6406F29ADD2BE008A79C7 /* UserDefaultsManager.swift in Sources */,
+				8BD567C529CD6CC400757258 /* EditView.swift in Sources */,
 				8BE7D8DA29ABF7710086DABA /* MonthTaskViewModel.swift in Sources */,
 				8BE7D8BD29ABE85A0086DABA /* TabItemView.swift in Sources */,
 				8BE7D8D629ABEF670086DABA /* ListItemView.swift in Sources */,
@@ -332,15 +336,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ShortTaskMemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 7PSW8M3W4F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ShortTaskMemo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,15 +369,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ShortTaskMemo/Preview Content\"";
 				DEVELOPMENT_TEAM = 7PSW8M3W4F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ShortTaskMemo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

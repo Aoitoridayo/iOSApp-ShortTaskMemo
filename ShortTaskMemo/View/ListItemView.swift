@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListItemView: View {
     @State var task: TaskModel
+    @State var isEdit = false
     let update: (TaskModel) -> Void
     var body: some View {
         HStack {
@@ -19,6 +20,15 @@ struct ListItemView: View {
                 : ""
             )
             .foregroundColor(Color.yellow)
+            
+            Spacer()
+            
+            Button(action: {
+                isEdit = true
+            }) {
+                Image(systemName: "pencil.circle")
+            }
+            .buttonStyle(.borderless)
         }
         .swipeActions(edge: .leading) {
             Button(action: {
@@ -28,6 +38,19 @@ struct ListItemView: View {
                 Image(systemName: "flag")
             }
             .tint(.yellow)
+        }
+        .sheet(isPresented: $isEdit) {
+            EditView(
+                task: task,
+                edit: { newTask in
+                    task = newTask
+                    update(task)
+                    isEdit = false
+                },
+                cancel: {
+                    isEdit = false
+                }
+            )
         }
     }
 }

@@ -38,6 +38,13 @@ class DayTaskViewModel: ObservableObject {
         sortTasks()
     }
     
+    func update(task: TaskModel) {
+        guard let index = tasks.firstIndex(where: { $0.id == task.id }) else {
+            return
+        }
+        self.tasks[index] = task
+    }
+    
     func firstGet() {
         let userDefaults = UserDefaultsManager()
         let key = KeyManager()
